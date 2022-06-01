@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div v-for="quiz in quizzes" class="ui centered card">
+      <div class="content">
+        <div class="header">
+          {{ quiz.title }}
+        </div>
+        <div class="meta">
+          {{ quiz.description }}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
+
+
+
+
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {},
+  data() {
+    return {
+      quizzes: [{title: 'Chapter 1',
+      description: 'Sample description'
+      },{title: 'Chapter 2',
+      description: 'Sample description two'
+      }]
+      
+      
+    }
   }
 }
 </script>
 
+
+
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#app {  
   margin-top: 60px;
 }
 </style>
