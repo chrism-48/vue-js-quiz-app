@@ -20,16 +20,55 @@ export default {
   },
   data() {
     return {
-      quizzes: [{title: 'Chapter 1',
-      description: 'Sample description'
-      },{title: 'Chapter 2',
-      description: 'Sample description two'
-      },{title: 'Chapter 3',
-      description: 'Sample description three'
-      },{title: 'Chapter 4',
-      description: 'Sample description four'
-      },{title: 'Chapter 5',
-      description: 'Sample description five'
+      quizzes: [{
+        title: 'Chapter 1',
+        description: 'Sample description',
+        cards: [
+          {
+            term: "Some word",
+            definition: "Some definition",
+          },
+          {
+            term: "Another word",
+            definition: "Another definition",
+          },
+        ]
+      },{
+        title: 'Chapter 2',
+        description: 'Sample description two',
+        cards: [
+          {
+            term: "Some word",
+            definition: "Some definition",
+          }
+        ]
+      },{
+        title: 'Chapter 3',
+        description: 'Sample description three',
+        cards: [
+          {
+            term: "Some word",
+            definition: "Some definition",
+          }
+        ]
+      },{
+        title: 'Chapter 4',
+        description: 'Sample description four',
+        cards: [
+          {
+            term: "Some word",
+            definition: "Some definition",
+          }
+        ]
+      },{
+        title: 'Chapter 5',
+        description: 'Sample description five',
+        cards: [
+          {
+            term: "Some word",
+            definition: "Some definition",
+          }
+        ]
       }]
       
       
@@ -53,5 +92,11 @@ export default {
 }
 .ui.centered.card:hover {
   background-color:rgba(0, 0, 0, 0.253);
+  cursor:pointer;
+}
+.extra_content {
+    color: rgb(0, 0, 0);
+    margin-left:5px;
+    margin-bottom:5px;
 } 
 </style>

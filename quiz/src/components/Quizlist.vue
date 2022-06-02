@@ -6,8 +6,14 @@
                 {{ quiz.title }}
                 </div>
                 <div class="meta">
-                {{ quiz.description }}
-                </div>
+                {{ quiz.description }}               
+                </div>                               
+            </div>
+            <div class="extra_content">
+                <span class="left floated">
+                <i class='sticky note icon'></i>
+                {{quiz.cards.length}}
+                </span>
             </div>
         </div>
     </div>     
