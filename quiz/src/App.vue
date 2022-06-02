@@ -1,16 +1,9 @@
 <template>
+
   <div id="app">
-    <div v-for="quiz in quizzes" class="ui centered card">
-      <div class="content">
-        <div class="header">
-          {{ quiz.title }}
-        </div>
-        <div class="meta">
-          {{ quiz.description }}
-        </div>
-      </div>
-    </div>
+    <quizlist v-bind:quizzes="quizzes"></quizlist>
   </div>
+
 </template>
 
 
@@ -18,10 +11,13 @@
 
 
 <script>
+import Quizlist from './components/Quizlist';
 
 export default {
   name: 'App',
-  components: {},
+  components: {
+    Quizlist
+  },
   data() {
     return {
       quizzes: [{title: 'Chapter 1',
