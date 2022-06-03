@@ -1,9 +1,8 @@
 <template>
-
   <div id="app">
     <quizlist v-bind:quizzes="quizzes"></quizlist>
+    <createquiz></createquiz>
   </div>
-
 </template>
 
 
@@ -11,12 +10,16 @@
 
 
 <script>
+
 import Quizlist from './components/Quizlist';
+import Createquiz from './components/Createquiz';
+
 
 export default {
   name: 'App',
   components: {
-    Quizlist
+    Quizlist,
+    Createquiz
   },
   data() {
     return {
@@ -42,35 +45,9 @@ export default {
             definition: "Some definition",
           }
         ]
-      },{
-        title: 'Chapter 3',
-        description: 'Sample description three',
-        cards: [
-          {
-            term: "Some word",
-            definition: "Some definition",
-          }
-        ]
-      },{
-        title: 'Chapter 4',
-        description: 'Sample description four',
-        cards: [
-          {
-            term: "Some word",
-            definition: "Some definition",
-          }
-        ]
-      },{
-        title: 'Chapter 5',
-        description: 'Sample description five',
-        cards: [
-          {
-            term: "Some word",
-            definition: "Some definition",
-          }
-        ]
-      }]
       
+      
+      }]
       
     }
   }
@@ -81,22 +58,23 @@ export default {
 
 
 <style>
-#app {  
+#app {
   margin-top: 60px;
 }
 .ui.centered.card {
-  border-style:solid;
-  border-width:.01px;
-  border-color:black;
+  border-style: solid;
+  border-width: 0.01px;
+  border-color: black;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.502);
 }
 .ui.centered.card:hover {
-  background-color:rgba(0, 0, 0, 0.253);
-  cursor:pointer;
+  background-color: rgba(0, 0, 0, 0.131);
+  cursor: pointer;
 }
 .extra_content {
-    color: rgb(0, 0, 0);
-    margin-left:5px;
-    margin-bottom:5px;
-} 
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
 </style>
