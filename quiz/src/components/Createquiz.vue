@@ -66,15 +66,17 @@ export default {
 
 
 <style>
-body {
+/* body {
     background-color:rgb(255, 255, 255);
-}
+    
+} */
 .ui.basic.button {
     width:85px;
     border-style:solid;
     border-width:.01px;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.308);
-    color:rgb(0, 0, 0) !important;   
+    color:rgb(0, 0, 0) !important; 
+    background-color: white !important;  
 }
 .ui.basic.button:hover {
     border-width:1.5px;
@@ -84,8 +86,12 @@ body {
 
 #plusbutton {
     border-width:.01px;
-    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.418);
-}  
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.418);    
+}
+
+#plusbutton:hover {
+    background-color:rgb(199, 199, 199) !important;
+}
 .inputs {
     border-style: solid;
     border-color:rgba(0, 0, 0, 0.37) !important;

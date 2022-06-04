@@ -52,7 +52,11 @@ export default {
           {
             term: "Some word",
             definition: "Some definition",
-          }
+          },
+          {
+            term: "Another word",
+            definition: "Another definition",
+          },
         ]
       
       
@@ -68,7 +72,14 @@ export default {
 
 <style>
 #app {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+body {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('./assets/luke-chesser-3rWagdKBF7U-unsplash.jpg');
 }
 .ui.centered.card {
   border-style: solid;

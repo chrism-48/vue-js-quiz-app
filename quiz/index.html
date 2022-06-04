@@ -14,7 +14,7 @@
         <i class="redo icon"></i> Reset
     </div>
     <div class="container1">
-        <h2>Quiz Maker</h2>
+        <h2>Quiz Builder</h2>
     </div>
     <div id="app"></div>
 
@@ -25,19 +25,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
     <style>
+        @font-face {
+            font-family: myFont1;
+            src: url("./fonts/Inconsolata-Regular.ttf");
+        }
+        
         .container1 {
+            margin-top: 10px;
             display: grid;
             text-align: center;
         }
         
+        h2 {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 3px 6px rgb(0, 0, 0);
+        }
+        
         .ui.button {
-            margin-left: 10px;
-            margin-top: 10px;
-            font-size: 13px;
+            margin-left: 5px;
+            margin-top: 5px;
+            font-size: 12px;
             border-style: solid;
             border-color: rgba(0, 0, 0, 0.219);
             border-width: .01px;
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.363);
+            color: black !important;
         }
         
         .ui.button:hover {
