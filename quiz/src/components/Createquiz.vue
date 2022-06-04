@@ -76,7 +76,10 @@ export default {
     border-width:.01px;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.308);
     color:rgb(0, 0, 0) !important; 
-    background-color: white !important;  
+    background-color: white !important;
+    font-size:14px;
+    font-weight:300;
+    
 }
 .ui.basic.button:hover {
     border-width:1.5px;
@@ -90,7 +93,7 @@ export default {
 }
 
 #plusbutton:hover {
-    background-color:rgb(199, 199, 199) !important;
+    background-color:rgb(255, 255, 255) !important;
 }
 .inputs {
     border-style: solid;

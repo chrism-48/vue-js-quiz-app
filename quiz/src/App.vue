@@ -88,9 +88,11 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.502);
 }
 .ui.centered.card:hover {
-  border-width:.2px;
+  border-width:1.2px;
   border-color:black;
   cursor: pointer;
+  box-shadow:2px 2px 12px rgba(0, 0, 0, 0.658) !important;
+  
 }
 .extra_content {
   color: rgb(0, 0, 0);
