@@ -10,17 +10,44 @@
 </head>
 
 <body>
+    <div class="ui button" onclick="location.reload()">
+        <i class="redo icon"></i> Reset
+    </div>
+    <div class="container1">
+        <h2>Quiz Maker</h2>
+    </div>
     <div id="app"></div>
-
-
-
-
 
 
 
     <!-- built files will be auto injected -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <style>
+        .container1 {
+            display: grid;
+            text-align: center;
+        }
+        
+        .ui.button {
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 13px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.219);
+            border-width: .01px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.363);
+        }
+        
+        .ui.button:hover {
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.363);
+            border-style: solid;
+            border-color: black;
+            border-width: .01px;
+        }
+    </style>
+
 
 </body>
 

@@ -68,16 +68,15 @@ export default {
 
 <style>
 #app {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .ui.centered.card {
   border-style: solid;
-  border-width: 0.01px;
-  border-color: rgba(0, 0, 0, 0.185);
+  border-color: rgba(0, 0, 0, 0.247);
+  border-width: .01px; 
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.502);
 }
 .ui.centered.card:hover {
-  /* background-color: rgba(0, 0, 0, 0.131); */
   border-width:.2px;
   border-color:black;
   cursor: pointer;

@@ -74,15 +74,30 @@ body {
     border-style:solid;
     border-width:.01px;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.308);
+    color:rgb(0, 0, 0) !important;   
 }
 .ui.basic.button:hover {
     border-width:1.5px;
-    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.308);   
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.308); 
+    background-color:rgba(0, 0, 0, 0.151) !important;  
 }
 
 #plusbutton {
     border-width:.01px;
     box-shadow:2px 2px 8px rgba(0, 0, 0, 0.418);
-}   
+}  
+.inputs {
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.37) !important;
+    border-width:.2px;
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.418);
+    color:rgb(0, 0, 0) !important;
+} 
+.inputs:focus {
+    border-style: solid !important;
+    border-color:rgba(0, 0, 0, 0.685) !important;
+    border-width:.05px !important;
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.418) !important;
+}
 
 </style>
