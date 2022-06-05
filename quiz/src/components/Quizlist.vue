@@ -1,21 +1,14 @@
 <template> 
     <div>
-        <div v-for="quiz in quizzes" class="ui centered card">
-            <div class="content">
-                <div class="header">
-                {{ quiz.title }}
-                </div>
-                <div class="meta">
-                {{ quiz.description }}               
-                </div>                               
-            </div>
-            <div class="extra_content">
-                <span class="left floated">
-                <i class='sticky note icon'></i>
-                {{quiz.cards.length}}
-                </span>
-            </div>
+        <quiz  v-if="viewState === 'quizzes'" v-for="quiz in quizzes" :key="quiz.id" v-bind:quiz="quiz" v-on:view-quiz="viewQuiz"></quiz>
+
+        <div class="ui cards" v-if="viewState === 'cards'">
+            <flash-card v-for="card in this.selectedQuiz.cards" :key="card.id" v-bind:card="card"></flash-card>
         </div>
+
+        
+
+
     </div>     
 </template>
 
@@ -27,8 +20,28 @@
 
 
 <script>
+
+import Quiz from './Quiz.vue';
+import FlashCard from './FlashCard.vue';
+
 export default {
-    props: ['quizzes']
+    props: ['quizzes'],
+    components: {
+        Quiz,
+        FlashCard,
+    },
+    data() {
+        return {
+            selectedQuiz: {cards:[]},
+            viewState: 'quizzes',
+        }
+    }, 
+    methods: {
+        viewQuiz(quiz) {
+            this.selectedQuiz = quiz;
+            this.viewState = 'cards';
+        }
+    }
 }
 
 </script>
